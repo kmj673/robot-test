@@ -1,1 +1,3 @@
-{}
+{
+  "test": "jasmine-browser-runner runSpecs"
+}
