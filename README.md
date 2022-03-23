@@ -15,3 +15,7 @@
 
 https://user-images.githubusercontent.com/48757517/159597080-74ccd14a-6847-48c4-858c-cc65cb0d2640.mp4
 
+## Extra Things to do...
+- add grid to show the robot's location
+- make robot work with command from the point where robot already existed
+- use keyboard control to move robot's coordinate
