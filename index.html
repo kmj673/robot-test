@@ -9,6 +9,26 @@
     <script type="module" src="robot-simulator.spec.js"></script>
   </head>
   <body>
-    <h1>Open console</h1>
+    <h1>Test your Robot</h1>
+    <form action="" id="command">
+      <label for="command-string">Enter your command: </label>
+      <input
+        type="text"
+        name="command-string"
+        placeholder="ex) 7 3 NORTH RAALAL"
+      />
+      <button type="submit">Enter</button>
+      <br />
+      <output
+        ><span id="user-command"></span><span id="user-result"></span
+      ></output>
+    </form>
+    <br />
+    <p>
+      Say a robot starts at {7, 3} facing north. Running this stream of
+      instructions("RAALAL") should leave it at {9, 4} facing west.
+    </p>
+    <p>The letter-string "RAALAL" means:</p>
+    <p>Turn right Advance twice Turn left Advance once Turn left yet again</p>
   </body>
 </html>
