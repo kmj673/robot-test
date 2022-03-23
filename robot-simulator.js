@@ -48,17 +48,19 @@ class Robot {
   }
 }
 
+const robot = new Robot();
 const form = document.querySelector("#command");
-const command = form.querySelector("input");
+const input = form.querySelector("input");
+
+const output = form.querySelector("output");
 
 function handleSubmit(event) {
-  const robot = new Robot();
   event.preventDefault();
-  let input = command.value;
+  let command = input.value;
+  output.querySelector("#user-command").textContent = command + " ➡ ";
+  output.querySelector("#user-result").textContent = robot.execute(command);
   console.log(robot);
-  console.log(robot.execute(input));
-  console.log(robot);
-  command.value = "";
+  input.value = "";
 }
 
 form.addEventListener("submit", handleSubmit);
