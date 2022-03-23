@@ -11,7 +11,7 @@
 - how to use git ignore
 
 ## result
-
+- test command I tried `npx jest robot-simulator.spec.js`
 
 https://user-images.githubusercontent.com/48757517/159597080-74ccd14a-6847-48c4-858c-cc65cb0d2640.mp4
 
