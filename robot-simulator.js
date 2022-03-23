@@ -43,8 +43,24 @@ class Robot {
         if (this.face === "WEST") this.xCoor--;
       }
     }
+    this.command = "";
     return `${this.xCoor} ${this.yCoor} ${this.face}`;
   }
 }
+
+const form = document.querySelector("#command");
+const command = form.querySelector("input");
+
+function handleSubmit(event) {
+  const robot = new Robot();
+  event.preventDefault();
+  let input = command.value;
+  console.log(robot);
+  console.log(robot.execute(input));
+  console.log(robot);
+  command.value = "";
+}
+
+form.addEventListener("submit", handleSubmit);
 
 module.exports = Robot;
