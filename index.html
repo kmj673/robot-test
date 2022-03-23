@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robot Test</title>
     <script type="module" src="robot-simulator.js"></script>
-    <script type="module" src="robot-simulator.spec.js"></script>
     <script type="module" src="grid.js"></script>
+    <script type="module" src="robot-simulator.spec.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Test your Robot</h1>
     <form action="" id="command">
-      <label for="command-string">Enter your command: </label>
+      <label for="command-string">Enter your start point and command: </label>
       <input
         type="text"
         name="command-string"
@@ -24,6 +24,11 @@
       <output
         ><span id="user-command"></span><span id="user-result"></span
       ></output>
+    </form>
+    <form action="" id="executeForm" class="hidden">
+      <label for="execute-string">Enter your command: </label>
+      <input type="text" name="execute-string" placeholder="ex) RAALAL" />
+      <button type="submit">Enter</button>
     </form>
     <br />
     <p>

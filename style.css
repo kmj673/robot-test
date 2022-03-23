@@ -15,17 +15,17 @@ body {
   position: absolute;
   width: 1rem;
   height: 1rem;
+  border-radius: 50%;
   left: 19.5rem;
-  top: 19.5rem;
+  bottom: 19.5rem;
   background-color: #294029;
-  /* border-top: 3px solid #15dae3;
-  border-right: 3px solid #15dae3;
-  border-bottom: 3px solid #15dae3;
-  border-left: 3px solid #15dae3; */
 }
 #grid {
   position: absolute;
   width: 40rem;
   height: 40rem;
   background: url(./grid.svg);
+}
+.hidden {
+  display: none;
 }

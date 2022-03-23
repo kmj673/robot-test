@@ -43,9 +43,8 @@ class Robot {
         if (this.face === "WEST") this.xCoor--;
       }
     }
-    this.command = "";
     return `${this.xCoor} ${this.yCoor} ${this.face}`;
   }
 }
 
-module.exports = Robot;
+export { Robot };
